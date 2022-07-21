@@ -1,0 +1,11 @@
+<div>
+    <a class='url' href="{{cloudinaryLink}}">Click for image</a>
+    <div>
+        <input type="file" (change)="imageInput($event)" />
+        <button (click)="setDisplay()">Upload Image</button>
+    </div>
+    This image contains
+    <div *ngFor="let obj of objects; let i = index;">
+        {{obj.object}}
+    </div> 
+</div>
